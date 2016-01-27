@@ -19,10 +19,11 @@
     "require": {
         "php": ">=5.5.9",
         "illuminate/support": "5.*",
-        "illuminate/console": "5.*"
+        "illuminate/console": "5.*",
+        "illuminate/config": "5.*",
+        "illuminate/database": "5.*"
     },
     "require-dev": {
-        "laravel/framework": "5.*",
         "phpunit/phpunit" : "4.*",
         "mockery/mockery": "0.9.*"
     },
