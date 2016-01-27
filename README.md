@@ -1,5 +1,7 @@
 ### A Laravel 5 package to test database migrations before you get into trouble
 
+Please don't use in production environments YET!! We still need some tests && feedback.
+
 #### Why
 Mysql does not allow wrapping table operations in transactions (Postgresql does), that's
 why when you screw one of your migrations, you are basically left in an irreparable broken
