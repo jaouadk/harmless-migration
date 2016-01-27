@@ -20,7 +20,7 @@ So the main idea behind this package is the following:
 Sqlite databases are not supported for the time being. If someone has an idea that would be great.
 
 #### Install
-``` composer require shincoder/harmless-migration:dev-develop ```
+``` composer require shincoder/harmless-migration:dev-master ```
 
 #### Add the service provider
 Edit your ``` config/app.php ``` providers array, add the following:
