@@ -56,20 +56,20 @@ class MigrateTestCommand extends Command
             $this->info('Running artisan migrate against the testing database(s)');
 
             $exitCode = $this->call('migrate');
+
+            $this->destroyStubs($stubs);
+
+            if ($exitCode != 0) {
+                $this->error('You recent migrations will break your database');
+            } else {
+                $this->info('Looks good, you can migrate for real now!');
+            }
         } catch (\Exception $e) {
             $this->warn('Something went wrong!!! Cleaning...');
 
             $this->destroyStubs($stubs);
 
             throw $e;
-        }
-
-        $this->destroyStubs($stubs);
-
-        if ($exitCode != 0) {
-            $this->error('You recent migrations will break your database, and get you fired by the end of the week!');
-        } else {
-            $this->info('Looks good, you can migrate for real now!');
         }
     }
 
