@@ -1,0 +1,34 @@
+{
+    "name": "shincoder/harmless-migration",
+    "description": "",
+    "keywords": [
+        "laravel",
+        "database",
+        "migrations"
+    ],
+    "homepage": "https://github.com/shincoder/harmless-migration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jaouad Elmoussaoui",
+            "email": "jaouad.elmoussaoui@gmail.com",
+            "homepage": "http://shincoding.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.*",
+        "illuminate/console": "5.*"
+    },
+    "require-dev": {
+        "laravel/framework": "5.*",
+        "phpunit/phpunit" : "4.*",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shincoder\\Harmless\\": "src"
+        }
+    }
+}
