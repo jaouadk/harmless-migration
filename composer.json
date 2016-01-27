@@ -24,14 +24,11 @@
     "require-dev": {
         "laravel/framework": "5.*",
         "phpunit/phpunit" : "4.*",
-        "mockery/mockery": "0.9.*",
-        "orchestra/testbench": "~3.0"
+        "mockery/mockery": "0.9.*"
     },
     "autoload": {
         "psr-4": {
             "Shincoder\\Harmless\\": "src"
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
