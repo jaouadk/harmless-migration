@@ -29,11 +29,15 @@ Edit your ``` config/app.php ``` providers array, add the following:
 ```
 
 #### Migrate away
-If you use multiple database connections you should specify them all using the ``` --database=db1,db2 ``` option.
+The package has no way to guess which connections you are using.
+So if you use multiple database connections you **Must** specify them all using the ``` --database=db1,db2 ``` option.
 If not, the command will use the default connection in ``` config/database.php ```.
 
-- Single database connection
+If you don't specify all your connections, some of you migrations will still be run against your real database.
+This shouldn't be an issue if you only use your default connection.
+
+- Default database connection
 ``` php artisan migrate:test ```
 
 - Multiple database connections
-``` php artisan migrate:test --database=connection1,connection2 ```
+``` php artisan migrate:test --database=defaultConnection1,connection2 ```
